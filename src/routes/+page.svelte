@@ -1,6 +1,9 @@
-<script></script>
+<script>
+  import { enhance } from "$app/forms";
+  let { form } = $props();
+</script>
 
-<main>
+<main style="--bg-color: {form?.color ?? '#E5E2DD'}">
   <!-- <section class="keycord">
     <img src="src/lib/assets/images/keycord.png" alt="Keycord" />
     <div class="card">
@@ -37,7 +40,7 @@
     </div>
   </section> -->
 
-  <section class="background-color-selector">
+  <!-- <section class="background-color-selector">
     <form>
       <input type="color" list="colors" name="color" value="#E5E2DD" />
       <datalist id="colors">
@@ -48,14 +51,14 @@
         <option value="#302621"></option>
       </datalist>
     </form>
-  </section>
+  </section> -->
 
   <section class="social-links">
     <a href="https://github.com/IsaacEswa" target="_blank">Github</a>
   </section>
 
   <section class="background-color-selector">
-    <form>
+    <form method="POST" use:enhance>
       <div class="color-swatches">
         <button
           class="color-swatch"
@@ -97,6 +100,12 @@
 </main>
 
 <style>
+  main {
+    background-color: var(--bg-color);
+    transition: background-color 0.2s ease;
+    min-height: 100vh;
+  }
+
   .color-swatch[value="#E5E2DD"] {
     background-color: #e5e2dd;
   }
