@@ -106,19 +106,36 @@
     min-height: 100vh;
   }
 
-  .color-swatch[value="#E5E2DD"] {
-    background-color: #e5e2dd;
-  }
-  .color-swatch[value="#F5693C"] {
-    background-color: #f5693c;
-  }
-  .color-swatch[value="#722F37"] {
-    background-color: #722f37;
-  }
-  .color-swatch[value="#031C33"] {
-    background-color: #031c33;
-  }
-  .color-swatch[value="#302621"] {
-    background-color: #302621;
+  .color-swatches {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+
+    .color-swatch {
+      width: 2rem;
+      height: 2rem;
+      border: 2px solid #fff;
+      cursor: pointer;
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
+    .color-swatch[value="#E5E2DD"] {
+      background-color: #e5e2dd;
+    }
+    .color-swatch[value="#F5693C"] {
+      background-color: #f5693c;
+    }
+    .color-swatch[value="#722F37"] {
+      background-color: #722f37;
+    }
+    .color-swatch[value="#031C33"] {
+      background-color: #031c33;
+    }
+    .color-swatch[value="#302621"] {
+      background-color: #302621;
+    }
   }
 </style>
