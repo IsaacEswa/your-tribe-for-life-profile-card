@@ -1,7 +1,7 @@
 <script></script>
 
 <main>
-  <!-- <section class="keycord">
+  <section class="keycord">
     <img src="src/lib/assets/images/keycord.png" alt="Keycord" />
     <div class="card">
       <h1>Squad member</h1>
@@ -35,9 +35,9 @@
         </li>
       </ul>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="background-color-selector">
+  <section class="background-color-selector">
     <form>
       <input type="color" list="colors" name="color" value="#E5E2DD" />
       <datalist id="colors">
@@ -48,7 +48,7 @@
         <option value="#302621"></option>
       </datalist>
     </form>
-  </section> -->
+  </section>
 
   <section class="social-links">
     <a href="https://github.com/IsaacEswa" target="_blank">Github</a>
