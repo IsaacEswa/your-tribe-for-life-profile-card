@@ -1,7 +1,7 @@
 <script></script>
 
 <main>
-  <section class="keycord">
+  <!-- <section class="keycord">
     <img src="src/lib/assets/images/keycord.png" alt="Keycord" />
     <div class="card">
       <h1>Squad member</h1>
@@ -35,6 +35,20 @@
         </li>
       </ul>
     </div>
+  </section> -->
+
+  <section class="background-color-selector">
+    <form>
+      <input type="color" list="colors" name="color" value="#E5E2DD" />
+      <datalist id="colors">
+        <option value="#E5E2DD"></option>
+        <option value="#F5693C"></option>
+        <option value="#722F37"></option>
+        <!-- <option value="#01386A"></option> -->
+        <option value="#031C33"></option>
+        <option value="#302621"></option>
+      </datalist>
+    </form>
   </section>
 </main>
 
