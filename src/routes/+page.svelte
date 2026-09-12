@@ -96,4 +96,20 @@
   </section>
 </main>
 
-<style></style>
+<style>
+  .color-swatch[value="#E5E2DD"] {
+    background-color: #e5e2dd;
+  }
+  .color-swatch[value="#F5693C"] {
+    background-color: #f5693c;
+  }
+  .color-swatch[value="#722F37"] {
+    background-color: #722f37;
+  }
+  .color-swatch[value="#031C33"] {
+    background-color: #031c33;
+  }
+  .color-swatch[value="#302621"] {
+    background-color: #302621;
+  }
+</style>
