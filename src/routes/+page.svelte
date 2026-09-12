@@ -37,18 +37,21 @@
     </div>
   </section> -->
 
-  <section class="background-color-selector">
+  <!-- <section class="background-color-selector">
     <form>
       <input type="color" list="colors" name="color" value="#E5E2DD" />
       <datalist id="colors">
         <option value="#E5E2DD"></option>
         <option value="#F5693C"></option>
         <option value="#722F37"></option>
-        <!-- <option value="#01386A"></option> -->
         <option value="#031C33"></option>
         <option value="#302621"></option>
       </datalist>
     </form>
+  </section> -->
+
+  <section class="social-links">
+    <a href="https://github.com/IsaacEswa" target="_blank">Github</a>
   </section>
 </main>
 
