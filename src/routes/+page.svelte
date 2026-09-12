@@ -1,7 +1,7 @@
 <script></script>
 
 <main>
-  <section class="keycord">
+  <!-- <section class="keycord">
     <img src="src/lib/assets/images/keycord.png" alt="Keycord" />
     <div class="card">
       <h1>Squad member</h1>
@@ -35,7 +35,7 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
 
   <section class="background-color-selector">
     <form>
@@ -52,6 +52,47 @@
 
   <section class="social-links">
     <a href="https://github.com/IsaacEswa" target="_blank">Github</a>
+  </section>
+
+  <section class="background-color-selector">
+    <form>
+      <div class="color-swatches">
+        <button
+          class="color-swatch"
+          value="#E5E2DD"
+          name="color"
+          aria-label="Select background color to beige"
+        ></button>
+
+        <button
+          class="color-swatch"
+          value="#F5693C"
+          name="color"
+          aria-label="Select background color to orange"
+        ></button>
+
+        <button
+          class="color-swatch"
+          value="#722F37"
+          name="color"
+          aria-label="Select background color to darkred"
+        ></button>
+
+        <button
+          class="color-swatch"
+          value="#031C33"
+          name="color"
+          aria-label="Select background color to darkblue"
+        ></button>
+
+        <button
+          class="color-swatch"
+          value="#302621"
+          name="color"
+          aria-label="Select background color to darkbrown"
+        ></button>
+      </div>
+    </form>
   </section>
 </main>
 
