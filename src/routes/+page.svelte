@@ -5,7 +5,11 @@
 
 <main style="--bg-color: {form?.color ?? '#E5E2DD'}">
   <section class="keycord">
-    <img src="src/lib/assets/images/keycord.png" alt="Keycord" />
+    <img
+      class="keycord-image"
+      src="src/lib/assets/images/transparant-keycord.png"
+      alt="Keycord"
+    />
     <div class="card">
       <h1>Squad member</h1>
       <img
@@ -87,10 +91,30 @@
 </main>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   main {
     background-color: var(--bg-color);
     transition: background-color 0.2s ease;
     min-height: 100vh;
+    position: relative;
+  }
+
+  .keycord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .keycord-image {
+      max-width: 300px;
+      position: absolute;
+      top: -75px;
+    }
   }
 
   .color-swatches {
