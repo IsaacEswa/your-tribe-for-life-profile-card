@@ -136,14 +136,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: -75px;
+
+    position: relative;
 
     margin-bottom: -5rem;
 
     .keycord-image {
       max-width: 300px;
-      position: absolute;
-      top: -75px;
-      position: relative;
     }
 
     .card {
@@ -153,7 +153,7 @@
       background-color: #fbfaf6;
       z-index: 10;
       position: absolute;
-      bottom: 22.5%;
+      bottom: 3%;
       /* bottom: 22%; */
       padding: 0.5rem;
 
