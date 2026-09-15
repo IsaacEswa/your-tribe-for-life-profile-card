@@ -4,7 +4,7 @@
 </script>
 
 <main style="--bg-color: {form?.color ?? '#E5E2DD'}">
-  <section class="keycord">
+  <section class="keycord-wrapper">
     <img
       class="keycord-image"
       src="src/lib/assets/images/transparant-keycord.png"
@@ -105,7 +105,7 @@
     position: relative;
   }
 
-  .keycord {
+  .keycord-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,17 +115,21 @@
       max-width: 300px;
       position: absolute;
       top: -75px;
+      position: relative;
     }
 
     .card {
-      height: 10em;
-      width: 10em;
-      border: 1px solid black;
+      height: 21rem;
+      width: 16rem;
+      /*  border: 1px solid black; temporary */
+      background-color: #fbfaf6;
       z-index: 10;
+      position: absolute;
+      top: 50;
 
       .mugshot {
-        width: 7em;
-        height: 10em;
+        width: 7rem;
+        height: 10rem;
         aspect-ratio: 1/2;
         object-fit: cover;
         object-position: 53%;
