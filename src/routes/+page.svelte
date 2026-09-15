@@ -146,19 +146,31 @@
       z-index: 10;
       position: absolute;
       bottom: 22.5%;
-      padding: 1rem 1.5rem;
+      padding: 0.5rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
 
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         text-align: center;
       }
 
       .mugshot {
         width: 7rem;
-        height: 10rem;
+        height: 8rem;
         aspect-ratio: 1/2;
         object-fit: cover;
         object-position: 53%;
+        filter: grayscale(1);
+        transition: 0.2s ease;
+
+        &:hover {
+          filter: grayscale(0);
+        }
       }
 
       .personal-information {
@@ -171,7 +183,7 @@
         .personal-information-field {
           display: flex;
           flex-direction: row;
-          align-items: baseline;
+          align-items: end;
           gap: 0.5rem;
 
           h2 {
@@ -181,7 +193,8 @@
           p {
             width: 100%;
             font-family: "Just Me Again Down Here", serif;
-            font-size: 1.5rem;
+            font-size: 1.75rem;
+            line-height: 1;
 
             &::after {
               content: "";
