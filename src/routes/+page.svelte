@@ -1,6 +1,7 @@
 <script>
   import { enhance } from "$app/forms";
   import keycord from "$lib/assets/images/transparant-keycord.png";
+  import mugshotPlaceholder from "$lib/assets/images/mugshot-placeholder.jpeg.webp";
 
   let { form, data } = $props();
   const person = data.person;
@@ -11,11 +12,30 @@
     <img class="keycord-image" src={keycord} alt="Keycord" />
     <div class="card">
       <h1>Squad member</h1>
-      <img
-        class="mugshot"
-        src="src/lib/assets/images/isaac.jpg"
-        alt="Foto van Isaac Eswarapatham"
-      />
+
+      {#if person.mugshot}
+        <picture class="mugshot">
+          <source
+            type="image/avif"
+            srcset="https://fdnd.directus.app/assets/{person.mugshot_year2}?height=300&fit=cover&format=avif&quality=80"
+          />
+          <source
+            type="image/webp"
+            srcset="https://fdnd.directus.app/assets/{person.mugshot_year2}?height=300&fit=cover&format=webp&quality=80"
+          />
+          <img
+            class="mugshot"
+            src="https://fdnd.directus.app/assets/{person.mugshot_year2}?height=300&quality=80"
+            alt="Afbeelding van {person.name}"
+          />
+        </picture>
+      {:else}
+        <img
+          class="mugshot placeholder"
+          src={mugshotPlaceholder}
+          alt="Er is geen afbeelding van {person.name} beschikbaar"
+        />
+      {/if}
 
       <div class="personal-information">
         <ul>
