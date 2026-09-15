@@ -17,31 +17,31 @@
         src="src/lib/assets/images/isaac.jpg"
         alt="Foto van Isaac Eswarapatham"
       />
-    </div>
 
-    <div class="personal-information">
-      <ul>
-        <li>
-          <div class="personal-information-field">
-            <h2>Name</h2>
-            <p>Isaac Eswarapatham</p>
-          </div>
-        </li>
+      <div class="personal-information">
+        <ul>
+          <li>
+            <div class="personal-information-field">
+              <h2>Name</h2>
+              <p>Isaac Eswarapatham</p>
+            </div>
+          </li>
 
-        <li>
-          <div class="personal-information-field">
-            <h2>Team</h2>
-            <p>CoffeeTime</p>
-          </div>
-        </li>
+          <li>
+            <div class="personal-information-field">
+              <h2>Team</h2>
+              <p>CoffeeTime</p>
+            </div>
+          </li>
 
-        <li>
-          <div class="personal-information-field">
-            <h2>Song</h2>
-            <p>90210</p>
-          </div>
-        </li>
-      </ul>
+          <li>
+            <div class="personal-information-field">
+              <h2>Song</h2>
+              <p>90210</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -125,7 +125,7 @@
       background-color: #fbfaf6;
       z-index: 10;
       position: absolute;
-      top: 50;
+      bottom: 22.5%;
 
       .mugshot {
         width: 7rem;
