@@ -92,14 +92,13 @@
 <style>
   @font-face {
     font-family: "Just Me Again Down Here";
-    src: url("src/lib/assets/fonts/JustMeAgainDownHere-Regular.ttf")
-      format("truetype");
+    src: url("/fonts/JustMeAgainDownHere-Regular.ttf") format("truetype");
     /* font-family: "Just Me Again Down Here", serif; */
   }
 
   @font-face {
     font-family: "Helvetica Neue";
-    src: url("src/lib/assets/fonts/HelveticaNeueBold.otf") format("opentype");
+    src: url("/fonts/HelveticaNeueBold.otf") format("opentype");
     /* font-family: "Helvetica Neue", sans-serif; */
   }
   /* Remove Netfliy badge */
