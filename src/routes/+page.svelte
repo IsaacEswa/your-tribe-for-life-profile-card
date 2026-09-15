@@ -92,10 +92,30 @@
 </main>
 
 <style>
+  @font-face {
+    font-family: "Just Me Again Down Here";
+    src: url("src/lib/fonts/JustMeAgainDownHere-Regular.ttf") format("truetype");
+    /* font-family: "Just Me Again Down Here", serif; */
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("src/lib/fonts/HelveticaNeueBold.otf") format("opentype");
+    /* font-family: "Helvetica Neue", sans-serif; */
+  }
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  h1,
+  h2 {
+    font-weight: bold;
+    font-family: "Helvetica Neue", sans-serif;
+    letter-spacing: -5%;
+    text-transform: uppercase;
   }
 
   main {
@@ -128,6 +148,11 @@
       bottom: 22.5%;
       padding: 1rem 1.5rem;
 
+      h1 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
       .mugshot {
         width: 7rem;
         height: 10rem;
@@ -149,8 +174,14 @@
           align-items: baseline;
           gap: 0.5rem;
 
+          h2 {
+            font-size: 1rem;
+          }
+
           p {
             width: 100%;
+            font-family: "Just Me Again Down Here", serif;
+            font-size: 1.5rem;
 
             &::after {
               content: "";
