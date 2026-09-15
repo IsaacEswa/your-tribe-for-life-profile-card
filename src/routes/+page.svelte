@@ -2,7 +2,8 @@
   import { enhance } from "$app/forms";
   import keycord from "$lib/assets/images/transparant-keycord.png";
 
-  let { form } = $props();
+  let { form, data } = $props();
+  const person = data.person;
 </script>
 
 <main style="--bg-color: {form?.color ?? '#E5E2DD'}">
@@ -21,21 +22,21 @@
           <li>
             <div class="personal-information-field">
               <h2>Name</h2>
-              <p>Isaac Eswarapatham</p>
+              <p>{person.name}</p>
             </div>
           </li>
 
           <li>
             <div class="personal-information-field">
               <h2>Team</h2>
-              <p>CoffeeTime</p>
+              <p>{person.team_s13}</p>
             </div>
           </li>
 
           <li>
             <div class="personal-information-field">
               <h2>Song</h2>
-              <p>90210</p>
+              <p>{person.fav_song}</p>
             </div>
           </li>
         </ul>
@@ -102,7 +103,8 @@
     /* font-family: "Helvetica Neue", sans-serif; */
   }
   /* Remove Netfliy badge */
-  #nl-badge-frame {
+  #nl-badge-frame,
+  #nl-badge-frame html {
     display: none !important;
   }
 
