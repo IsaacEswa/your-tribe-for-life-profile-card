@@ -136,11 +136,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: -75px;
+    top: -120px;
 
     position: relative;
 
-    margin-bottom: -5rem;
+    margin-bottom: -7rem;
 
     .keycord-image {
       max-width: 300px;
