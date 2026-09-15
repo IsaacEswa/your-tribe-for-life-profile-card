@@ -1,15 +1,13 @@
 <script>
   import { enhance } from "$app/forms";
+  import keycord from "$lib/assets/images/transparant-keycord.png";
+
   let { form } = $props();
 </script>
 
 <main style="--bg-color: {form?.color ?? '#E5E2DD'}">
   <section class="keycord-wrapper">
-    <img
-      class="keycord-image"
-      src="src/lib/assets/images/transparant-keycord.png"
-      alt="Keycord"
-    />
+    <img class="keycord-image" src={keycord} alt="Keycord" />
     <div class="card">
       <h1>Squad member</h1>
       <img
