@@ -150,9 +150,19 @@
     position: relative;
 
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1.5rem;
+
+    grid-template-areas:
+      "keycord-wrapper"
+      "color-swatches-wrapper"
+      "social-links";
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      grid-template-areas: "color-swatches-wrapper keycord-wrapper social-links";
+    }
   }
 
   .keycord-wrapper {
@@ -163,8 +173,8 @@
     top: -120px;
 
     position: relative;
-
     margin-bottom: -7rem;
+    grid-area: keycord-wrapper;
 
     .keycord-image {
       max-width: 300px;
@@ -245,7 +255,7 @@
     display: flex;
     justify-content: center;
 
-    /* margin-top: -20px; */
+    grid-area: color-swatches-wrapper;
 
     .color-swatches {
       display: flex;
@@ -290,6 +300,9 @@
   .social-links {
     display: flex;
     justify-content: center;
+
+    grid-area: social-links;
+
     a {
       text-decoration: none;
       color: #fbfaf6;
