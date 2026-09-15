@@ -13,6 +13,7 @@
     <div class="card">
       <h1>Squad member</h1>
       <img
+        class="mugshot"
         src="src/lib/assets/images/isaac.jpg"
         alt="Foto van Isaac Eswarapatham"
       />
@@ -114,6 +115,21 @@
       max-width: 300px;
       position: absolute;
       top: -75px;
+    }
+
+    .card {
+      height: 10em;
+      width: 10em;
+      border: 1px solid black;
+      z-index: 10;
+
+      .mugshot {
+        width: 7em;
+        height: 10em;
+        aspect-ratio: 1/2;
+        object-fit: cover;
+        object-position: 53%;
+      }
     }
   }
 
