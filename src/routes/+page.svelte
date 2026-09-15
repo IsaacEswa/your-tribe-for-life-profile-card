@@ -49,7 +49,7 @@
     <a href="https://github.com/IsaacEswa" target="_blank">Github</a>
   </section>
 
-  <section class="background-color-selector">
+  <section class="color-swatches-wrapper">
     <form method="POST" use:enhance>
       <div class="color-swatches">
         <button
@@ -208,36 +208,46 @@
     }
   }
 
-  .color-swatches {
+  .color-swatches-wrapper {
     display: flex;
-    gap: 0.5rem;
-    flex-direction: row;
+    justify-content: center;
 
-    .color-swatch {
-      width: 2rem;
-      height: 2rem;
-      border: 2px solid #fff;
-      cursor: pointer;
+    .color-swatches {
+      display: flex;
+      gap: 1rem;
+      flex-direction: row;
 
-      &:active {
-        transform: scale(0.95);
+      .color-swatch {
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid #fff;
+        /* border: none; */
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(0.95);
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
       }
-    }
 
-    .color-swatch[value="#E5E2DD"] {
-      background-color: #e5e2dd;
-    }
-    .color-swatch[value="#F5693C"] {
-      background-color: #f5693c;
-    }
-    .color-swatch[value="#722F37"] {
-      background-color: #722f37;
-    }
-    .color-swatch[value="#031C33"] {
-      background-color: #031c33;
-    }
-    .color-swatch[value="#302621"] {
-      background-color: #302621;
+      .color-swatch[value="#E5E2DD"] {
+        background-color: #e5e2dd;
+      }
+      .color-swatch[value="#F5693C"] {
+        background-color: #f5693c;
+      }
+      .color-swatch[value="#722F37"] {
+        background-color: #722f37;
+      }
+      .color-swatch[value="#031C33"] {
+        background-color: #031c33;
+      }
+      .color-swatch[value="#302621"] {
+        background-color: #302621;
+      }
     }
   }
 </style>
