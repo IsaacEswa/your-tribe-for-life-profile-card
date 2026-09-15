@@ -45,10 +45,6 @@
     </div>
   </section>
 
-  <section class="social-links">
-    <a href="https://github.com/IsaacEswa" target="_blank">Github</a>
-  </section>
-
   <section class="color-swatches-wrapper">
     <form method="POST" use:enhance>
       <div class="color-swatches">
@@ -89,6 +85,10 @@
       </div>
     </form>
   </section>
+
+  <section class="social-links">
+    <a href="https://github.com/IsaacEswa" target="_blank">GitHub</a>
+  </section>
 </main>
 
 <style>
@@ -111,7 +111,8 @@
   }
 
   h1,
-  h2 {
+  h2,
+  a {
     font-weight: bold;
     font-family: "Helvetica Neue", sans-serif;
     letter-spacing: -5%;
@@ -121,8 +122,13 @@
   main {
     background-color: var(--bg-color);
     transition: background-color 0.2s ease;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5rem;
   }
 
   .keycord-wrapper {
@@ -130,6 +136,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: -5rem;
 
     .keycord-image {
       max-width: 300px;
@@ -146,6 +154,7 @@
       z-index: 10;
       position: absolute;
       bottom: 22.5%;
+      /* bottom: 22%; */
       padding: 0.5rem;
 
       display: flex;
@@ -212,6 +221,8 @@
     display: flex;
     justify-content: center;
 
+    /* margin-top: -20px; */
+
     .color-swatches {
       display: flex;
       gap: 1rem;
@@ -223,6 +234,7 @@
         border: 1px solid #fff;
         /* border: none; */
         cursor: pointer;
+        transition: 0.2s ease;
 
         &:hover {
           transform: scale(0.95);
@@ -247,6 +259,27 @@
       }
       .color-swatch[value="#302621"] {
         background-color: #302621;
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: #fbfaf6;
+      text-transform: none;
+      mix-blend-mode: exclusion;
+      font-size: 1.25rem;
+      transition: 0.2s ease;
+
+      &:hover {
+        transform: scale(0.95);
+      }
+
+      &:active {
+        transform: scale(0.9);
       }
     }
   }
