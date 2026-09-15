@@ -126,6 +126,7 @@
       z-index: 10;
       position: absolute;
       bottom: 22.5%;
+      padding: 1rem 1.5rem;
 
       .mugshot {
         width: 7rem;
@@ -133,6 +134,32 @@
         aspect-ratio: 1/2;
         object-fit: cover;
         object-position: 53%;
+      }
+
+      .personal-information {
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .personal-information-field {
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          gap: 0.5rem;
+
+          p {
+            width: 100%;
+
+            &::after {
+              content: "";
+              display: block;
+              border-bottom: 1px dashed black;
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }
