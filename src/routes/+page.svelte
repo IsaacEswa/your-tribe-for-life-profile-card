@@ -148,6 +148,7 @@
     transition: background-color 0.2s ease;
     height: 100vh;
     position: relative;
+    padding: 1rem;
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -159,8 +160,9 @@
       "social-links";
 
     @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr 1fr;
+      padding: 3rem;
 
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: "color-swatches-wrapper keycord-wrapper social-links";
     }
   }
@@ -175,6 +177,10 @@
     position: relative;
     margin-bottom: -7rem;
     grid-area: keycord-wrapper;
+
+    /* @media (min-width: 768px) {
+      top: -140px;
+    } */
 
     .keycord-image {
       max-width: 300px;
@@ -257,10 +263,19 @@
 
     grid-area: color-swatches-wrapper;
 
+    @media (min-width: 768px) {
+      justify-content: start;
+      align-items: center;
+    }
+
     .color-swatches {
       display: flex;
       gap: 1rem;
       flex-direction: row;
+
+      @media (min-width: 768px) {
+        flex-direction: column;
+      }
 
       .color-swatch {
         width: 3rem;
@@ -302,6 +317,11 @@
     justify-content: center;
 
     grid-area: social-links;
+
+    @media (min-width: 768px) {
+      align-items: center;
+      justify-content: end;
+    }
 
     a {
       text-decoration: none;
